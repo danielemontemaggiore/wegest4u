@@ -23,7 +23,7 @@ $(document).ready(function() {
 		var a3 = jsonData.a3;
 		var a4 = jsonData.a4;
 		   //window.location.assign("http://www.i-salon.eu/app/statistiche/index.asp?ID_attivita=" + ID_attivita + "&ID_punto=" + ID_punto + "&ID_operatore=" + ID_operatore +"&Scadenza=" + Scadenza + "&a1=" + a1 + "&a2=" + a2 + "&a3=" + a3 + "&a4=" + a4);
-			window.location.assign("http://appalermo.altervista.org/parrucchieria/menu.html?ID_attivita=" + ID_attivita + "&ID_punto=" + ID_punto + "&ID_operatore=" + ID_operatore +"&Scadenza=" + Scadenza + "&a1=" + a1 + "&a2=" + a2 + "&a3=" + a3 + "&a4=" + a4);
+			window.location.assign("http://www.workingroupitalia.it/app//menu.html?ID_attivita=" + ID_attivita + "&ID_punto=" + ID_punto + "&ID_operatore=" + ID_operatore +"&Scadenza=" + Scadenza + "&a1=" + a1 + "&a2=" + a2 + "&a3=" + a3 + "&a4=" + a4);
 	 },
       error: function()
       {
