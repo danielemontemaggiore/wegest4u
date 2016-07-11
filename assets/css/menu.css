@@ -9,7 +9,20 @@
     background-position:center center;
     background-repeat:no-repeat;
     background-size:cover; /* you change this to "contain" if you don't want the images to be cropped */
+	text-align:center;
 }
+
+.nome-icone{
+	color: #FFF;
+	margin-top: 10px
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    display: inline-block;
+    width: 100%;
+}
+
+
 
 .img_1-1{background-image:url('http://appalermo.altervista.org/images/logo_statistiche.png');}
 .img_1-2{background-image:url('');}
@@ -22,6 +35,8 @@
 .img_3-1{background-image:url('');}
 .img_3-2{background-image:url('');}
 .img_3-3{background-image:url('');}
+
+
 
 img{
 	display: block;
@@ -37,3 +52,17 @@ img{
 .logo_wegest4U{
 	margin-top: 30px;
 }
+
+/*
+.img_1-1{background-image:url('http://appalermo.altervista.org/images/logo_statistiche.png');}
+.img_1-2{background-image:url('');}
+.img_1-3{background-image:url('');}
+
+.img_2-1{background-image:url('');}
+.img_2-2{background-image:url('');}
+.img_2-3{background-image:url('');}
+
+.img_3-1{background-image:url('');}
+.img_3-2{background-image:url('');}
+.img_3-3{background-image:url('');}
+*/
