@@ -24,11 +24,11 @@ $(document).ready(function() {
 			var a2 = jsonData.a2;	
 			var a3 = jsonData.a3;
 			var a4 = jsonData.a4;
-			   //window.location.assign("http://www.i-salon.eu/app/statistiche/index.asp?ID_attivita=" + ID_attivita + "&ID_punto=" + ID_punto + "&ID_operatore=" + ID_operatore +"&Scadenza=" + Scadenza + "&a1=" + a1 + "&a2=" + a2 + "&a3=" + a3 + "&a4=" + a4);
-				window.location.assign("http://www.workingroupitalia.it/app//menu.html?ID_attivita=" + ID_attivita + "&ID_punto=" + ID_punto + "&ID_operatore=" + ID_operatore +"&Scadenza=" + Scadenza + "&a1=" + a1 + "&a2=" + a2 + "&a3=" + a3 + "&a4=" + a4);
+				window.location.assign("http://www.workingroupitalia.it/app/menu.html?ID_attivita=" + ID_attivita + "&ID_punto=" + ID_punto + "&ID_operatore=" + ID_operatore +"&Scadenza=" + Scadenza + "&a1=" + a1 + "&a2=" + a2 + "&a3=" + a3 + "&a4=" + a4);
 		}
 		else{
-				window.location.assign("http://www.workingroupitalia.it/app/");
+			var Testo_errore = jsonData.Testo_errore;
+				window.location.assign("http://www.workingroupitalia.it/app/index.html?Testo_errore=" + Testo_errore);
 		}
 	 },
       error: function()
@@ -37,4 +37,25 @@ $(document).ready(function() {
       }
     });
   });
+  
+  
 });
+
+// All'avvio della pagina..
+function get(name){
+	  
+   if(name=(new RegExp('[?&]'+encodeURIComponent(name)+'=([^&]*)')).exec(location.search))
+      return decodeURIComponent(name[1]);
+  
+	}
+	
+function codeError() {
+	var Testo_errore = "";
+	Testo_errore = get('Testo_errore');
+
+	if(Testo_errore!="undefined"){
+		$("#errore").append(Testo_errore);
+	}
+}
+		
+window.onload = codeError;

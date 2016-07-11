@@ -90,3 +90,8 @@ form[role=login] {
 	}
 
 .panel-default {border-color: transparent !important; }
+
+.errore{
+	color: #f44336;
+	text-align: center;
+}

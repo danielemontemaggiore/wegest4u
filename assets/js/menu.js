@@ -10,6 +10,7 @@ $(document).ready(function() {
 		var a4 = get('a4');
 	window.location.assign("http://www.i-salon.eu/app/statistiche/index.asp?ID_attivita=" + ID_attivita + "&ID_punto=" + ID_punto + "&ID_operatore=" + ID_operatore +"&Scadenza=" + Scadenza + "&a1=" + a1 + "&a2=" + a2 + "&a3=" + a3 + "&a4=" + a4);
   });
+  
   $("#agenda-appuntamenti").click(function(){
 		var ID_attivita = get('ID_attivita');
 		var ID_punto = get('ID_punto');
@@ -19,9 +20,12 @@ $(document).ready(function() {
 		var a2 = get('a2');
 		var a3 = get('a3');
 		var a4 = get('a4');
-	window.location.assign("http://www.i-salon.eu/app/statistiche/index.asp?ID_attivita=" + ID_attivita + "&ID_punto=" + ID_punto + "&ID_operatore=" + ID_operatore +"&Scadenza=" + Scadenza + "&a1=" + a1 + "&a2=" + a2 + "&a3=" + a3 + "&a4=" + a4);
+	window.location.assign("http://www.workingroupitalia.it/app/agenda-appuntamenti.html?ID_attivita=" + ID_attivita + "&ID_punto=" + ID_punto + "&ID_operatore=" + ID_operatore +"&Scadenza=" + Scadenza + "&a1=" + a1 + "&a2=" + a2 + "&a3=" + a3 + "&a4=" + a4);
   });
   
+  $("#esci").click(function(){
+	window.location.assign("http://www.workingroupitalia.it/app/");
+  });
 	
   
   function get(name){
@@ -32,8 +36,3 @@ $(document).ready(function() {
 	}
 });
 
-function getValue(){   // Recupero i vari campi
-	
-		
-		
-	}
