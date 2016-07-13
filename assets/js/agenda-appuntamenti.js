@@ -18,7 +18,7 @@ function visualizzaAppuntamenti() {
 		var tipo ="w";
 		
 		$.ajax({
-		  type: "POST",
+		  type: "GET",
 		  url: "http://www.i-salon.eu/agenda_appuntamenti_elenco_ajax.asp",
 		  data: "ID_attivita=" + ID_attivita + "&ID_punto=" + ID_punto + "&ID_operatore=" + ID_operatore + "&Scadenza=" + Scadenza + "&a1=" + a1 + "&a2=" + a2 + "&a3=" + a3 + "&a4=" + a4 + "&tipo=" + tipo,
 		  dataType: "text",

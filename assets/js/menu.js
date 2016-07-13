@@ -3,13 +3,15 @@ $(document).ready(function() {
 		var ID_attivita = get('ID_attivita');
 		var ID_punto = get('ID_punto');
 		var ID_operatore = get('ID_operatore');
+		var ID_culture = get('ID_culture');
 		var Scadenza = get('Scadenza');
 		var a1 = get('a1');
 		var a2 = get('a2');
 		var a3 = get('a3');
 		var a4 = get('a4');
-	window.location.assign("http://www.i-salon.eu/app/statistiche/index.asp?ID_attivita=" + ID_attivita + "&ID_punto=" + ID_punto + "&ID_operatore=" + ID_operatore +"&Scadenza=" + Scadenza + "&a1=" + a1 + "&a2=" + a2 + "&a3=" + a3 + "&a4=" + a4);
-  });
+	window.location.assign("http://www.i-salon.eu/app/statistiche/index.asp?ID_attivita=" + ID_attivita + "&ID_punto=" + ID_punto + "&ID_culture=" + ID_culture + "&ID_operatore=" + ID_operatore +"&Scadenza=" + Scadenza + "&a1=" + a1 + "&a2=" + a2 + "&a3=" + a3 + "&a4=" + a4);
+
+ });
   
   $("#agenda-appuntamenti").click(function(){
 		var ID_attivita = get('ID_attivita');
