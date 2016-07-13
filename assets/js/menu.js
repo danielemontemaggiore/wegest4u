@@ -23,6 +23,10 @@ $(document).ready(function() {
 	window.location.assign("http://www.workingroupitalia.it/app/agenda-appuntamenti.html?ID_attivita=" + ID_attivita + "&ID_punto=" + ID_punto + "&ID_operatore=" + ID_operatore +"&Scadenza=" + Scadenza + "&a1=" + a1 + "&a2=" + a2 + "&a3=" + a3 + "&a4=" + a4);
   });
   
+  $("#hotspot").click(function(){
+	window.location.assign("http://www.workingroupitalia.it/app/hotspot");
+  });
+  
   $("#esci").click(function(){
 	window.location.assign("http://www.workingroupitalia.it/app/");
   });
@@ -34,5 +38,30 @@ $(document).ready(function() {
       return decodeURIComponent(name[1]);
   
 	}
+	
+	
+	
+	
+	
+	
 });
 
+
+function getMobileOperatingSystem() {
+		  var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+		  if( userAgent.match( /iPad/i ) || userAgent.match( /iPhone/i ) || userAgent.match( /iPod/i ) )
+		  {
+		
+
+		  }
+		  else if( userAgent.match( /Android/i ) )
+		  {
+
+			document.getElementById('hotspot').style.visibility='visible';
+		  }
+		  else
+		  {
+		
+		  }
+	}
