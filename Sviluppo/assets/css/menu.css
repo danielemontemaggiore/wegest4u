@@ -1,0 +1,71 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,900);  /* <-- Just for the demo, Yes I like pretty fonts... */
+
+.square {
+    float:left;
+    position: relative;
+    width: 30%;
+    padding-bottom : 5%; /* = width for a 1:1 aspect ratio */
+    margin:1.66%;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover; /* you change this to "contain" if you don't want the images to be cropped */
+	text-align:center;
+}
+
+.square-bottom{
+	padding-bottom : 40% !important;
+}
+.nome-icone{
+	color: #FFF;
+	margin-top: 10px
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    display: inline-block;
+    width: 100%;
+}
+
+
+
+.img_1-1{background-image:url('http://appalermo.altervista.org/images/logo_statistiche.png');}
+.img_1-2{background-image:url('');}
+.img_1-3{background-image:url('');}
+
+.img_2-1{background-image:url('');}
+.img_2-2{background-image:url('');}
+.img_2-3{background-image:url('');}
+
+.img_3-1{background-image:url('');}
+.img_3-2{background-image:url('');}
+.img_3-3{background-image:url('');}
+
+
+
+img{
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.grande_quadrato{
+	padding-top: 100px;
+}
+
+
+.logo_wegest4U{
+	margin-top: 30px;
+}
+
+/*
+.img_1-1{background-image:url('http://appalermo.altervista.org/images/logo_statistiche.png');}
+.img_1-2{background-image:url('');}
+.img_1-3{background-image:url('');}
+
+.img_2-1{background-image:url('');}
+.img_2-2{background-image:url('');}
+.img_2-3{background-image:url('');}
+
+.img_3-1{background-image:url('');}
+.img_3-2{background-image:url('');}
+.img_3-3{background-image:url('');}
+*/
