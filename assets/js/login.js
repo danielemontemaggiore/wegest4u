@@ -5,7 +5,7 @@ $(document).ready(function() {
     $.ajax({
       type: "POST",
       url: "http://www.i-salon.eu/login_punto_ajax.asp",
-      data: "codice=1&username=" + username + "&password=" + password,
+      data: "codice=1&username=" + username + "&password=" + password + "&privilegi=sologestore",
       dataType: "text",
       success: function(msg)
       {
